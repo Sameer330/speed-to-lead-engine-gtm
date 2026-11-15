@@ -1,0 +1,69 @@
+[
+  {
+    "id": "lead_01_tier_a",
+    "expected_tier": "Tier A",
+    "description": "High-Value Enterprise Lead with acute production rate limit pain",
+    "payload": {
+      "first_name": "Sarah",
+      "last_name": "Chen",
+      "email": "sarah.chen@linear.app",
+      "company_name": "Linear",
+      "company_domain": "linear.app",
+      "company_size": "50-200",
+      "use_case": "We are rolling out AI agents across Linear for issue tracking. Hitting 429 rate limits in production. Need dedicated throughput (provisioned TPM) and enterprise ZDR before next month's launch."
+    }
+  },
+  {
+    "id": "lead_02_tier_b",
+    "expected_tier": "Tier B",
+    "description": "Mid-Market Growth Lead asking for custom volume pricing and SLA",
+    "payload": {
+      "first_name": "David",
+      "last_name": "Miller",
+      "email": "david@resend.com",
+      "company_name": "Resend",
+      "company_domain": "resend.com",
+      "company_size": "10-50",
+      "use_case": "We want to integrate Claude to generate intelligent email deliverability recommendations for our customers. Looking to explore volume pricing tiers and 99.9% uptime SLA commitments."
+    }
+  },
+  {
+    "id": "lead_03_tier_c",
+    "expected_tier": "Tier C",
+    "description": "Small Early-Stage Startup prototyping without immediate enterprise scale",
+    "payload": {
+      "first_name": "Marcus",
+      "last_name": "Vance",
+      "email": "marcus@tinycraft.dev",
+      "company_name": "TinyCraft",
+      "company_domain": "tinycraft.dev",
+      "company_size": "1-10",
+      "use_case": "We are a 2-person dev shop building a small experimental productivity tool on weekends. Want to see if Claude Enterprise has any startup discounts."
+    }
+  },
+  {
+    "id": "lead_04_disqualified_personal",
+    "expected_tier": "Disqualified",
+    "description": "Personal Gmail address (Deterministic Fast-Fail)",
+    "payload": {
+      "first_name": "Alex",
+      "last_name": "Reynolds",
+      "email": "alex.reynolds99@gmail.com",
+      "company_name": "Self",
+      "use_case": "Just a student trying out AI APIs for my college thesis."
+    }
+  },
+  {
+    "id": "lead_05_disqualified_spam",
+    "expected_tier": "Disqualified",
+    "description": "Irrelevant vendor solicitation / spam submission",
+    "payload": {
+      "first_name": "Crypto",
+      "last_name": "Promoter",
+      "email": "promo@tokenblast-xyz.io",
+      "company_name": "TokenBlast",
+      "company_domain": "tokenblast-xyz.io",
+      "use_case": "We can get your Anthropic company 100,000 Telegram members in 24 hours. Click here to buy tokens."
+    }
+  }
+]
